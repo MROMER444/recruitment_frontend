@@ -27,7 +27,7 @@ const Form = () => {
     const [resume, setResume] = useState(null);
     const [resumeError, setResumeError] = useState('');
 
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate(); 
 
     const handleNameChange = (event) => {
         setName(event.target.value);
@@ -108,7 +108,6 @@ const Form = () => {
                 body: formData
             });
             if (response.ok) {
-                // Redirect or show success message
                 navigate('/preview', {
                     state: {
                         name,
@@ -125,7 +124,6 @@ const Form = () => {
                     },
                 });
             } else {
-                // Handle error
                 console.error('Failed to submit form');
             }
         } catch (error) {

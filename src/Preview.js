@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import './Preview.css'; // Ensure you have a CSS file for additional styling if needed
+import './Preview.css'; 
 
 const Preview = () => {
     const location = useLocation();
