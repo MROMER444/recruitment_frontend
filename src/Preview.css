@@ -1,0 +1,8 @@
+.preview-container {
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+.table th, .table td {
+    text-align: left;
+    vertical-align: middle;
+}
